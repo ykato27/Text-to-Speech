@@ -1,6 +1,6 @@
-# python-template-repository
+# Text-toSpeech
 
-本リポジトリはPython 環境のテンプレートリポジトリです。
+本リポジトリは音声合成のexample リポジトリです。
 
 ## リポジトリ構成
 
@@ -8,41 +8,38 @@
 .
 ├── Dockerfile
 ├── README.md
-├── example
+├── data
+├── docker-compose.yml
+├── models
+├── notebooks
+│   ├── EnglishTTS.ipynb
+│   ├── Mozilla_TTS_WaveRNN.ipynb
+│   ├── NVidia_Flowtron_Waveglow.ipynb
+│   ├── NVidia_Tacotron2_Waveglow.ipynb
+│   ├── RealTimeVoiceCloning.ipynb
+│   ├── fatchordWaveRNN.ipynb
+│   ├── inference_colab.ipynb
+│   ├── synthesize_ref.ipynb
+│   └── ttslearn
+│       ├── ch04_Python_SP.ipynb
+│       ├── ch05_DNNTTS.ipynb
+│       ├── ch06_Recipe_DNNTTS.ipynb
+│       ├── ch07_WaveNet.ipynb
+│       ├── ch08_Recipe_WaveNet.ipynb
+│       ├── ch09_Tacotron.ipynb
+│       ├── ch10_Recipe_Tacotron.ipynb
+│       └── ch11_Advanced_demos.ipynb
+├── pyproject.toml
 ├── requirements.txt
-└── src
-    └── __init__.py
+├── setup.cfg
+├── src
+│   └── __init__.py
+├── tests
+│   └── __init__.py
+└── work
 ```
 
-## 環境詳細
-
-- Python : 3.9.4
-
-## 事前準備
-
-- Docker インストール
-
-## 環境構築
-
-- Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/python-template-repository）
-
-```
-cd Desktop/python-template-repository
-```
-
-- Dockerによる環境構築（フォルダをマウント：Desktop/python-template-repository）
-
-```
-docker-compose up --build
-```
-
-- ブラウザーを立ち上げてlocalhost:8888へアクセス
-- ローカルフォルダがマウントされている
 
 ## 動作環境
 
-マシンスペック（Mac)
-
-- MacBook Air (Retina, 13-inch, 2018)
-- 1.6 GHz デュアルコアIntel Core i5
-- 8 GB 2133 MHz LPDDR3
+- Google Colab
